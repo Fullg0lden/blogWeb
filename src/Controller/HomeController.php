@@ -10,9 +10,10 @@ namespace App\Controller;
 
 
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Tests\Annotation;
 
-class HomeController
-{
+class HomeController{
+//    @Route("/")
     public function homepage(){
         return new Response("Hey ! It's working !");
     }
