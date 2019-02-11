@@ -14,10 +14,17 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class Article
 {
+//    /**
+//     * @Route("/Article/article1")
+//     */
+//    public function coucou(){
+//        return new Response("The article is unavailable !");
+//    }
+
     /**
-     * @Route("/Article")
+     * @Route("Article/{page}")
      */
-    public function coucou(){
+    public function index(){
         return new Response("The article is unavailable !");
     }
 }
