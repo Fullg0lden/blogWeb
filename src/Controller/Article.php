@@ -22,9 +22,9 @@ class Article
 //    }
 
     /**
-     * @Route("Article/{page}")
+     * @Route("Article/{article}")
      */
-    public function index(){
-        return new Response("The article is unavailable !");
+    public function index($article){
+        return new Response("The article ".$article." is unavailable !");
     }
 }
